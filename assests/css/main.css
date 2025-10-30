@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Rese Code */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: rgb(84, 125, 247);
+}
+
+a{
+    color : black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header Style */
+
+header {
+  width: 80%;
+  min-height: auto;
+  margin: auto;
+  padding: 0 2%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  min-width: 20%;
+}
+
+.menu {
+  min-width: 60%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+.menu li a {
+  color: black;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: rgb(84, 125, 247);
+}
+
+.header-buttons {
+  min-width: 25%;
+}
+
+.header-buttons a {
+  display: block;
+  padding: 1rem 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.2rem;
+  transition: 0.4s;
+}
+
+.header-buttons a:nth-child(1) {
+  border: 1px solid #0953ff;
+  color: black;
+}
+
+.header-buttons a:nth-child(2) {
+  background-color: var(--primary-color);
+  border: 1px solid #0953ff;
+}
+
+.header-buttons a:hover {
+  background-color: #ff7dd8;
+}
+
+.header-buttons a:nth-child(1):hover {
+  color: white;
+}
+
+/* Intro Section Style */
+
+#intro-section {
+  width: 80%;
+  margin: auto;
+  background-image: url("../images/intro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.right-image img {
+  width: 100%;
+}
+
+.right-image {
+  width: 70%;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-section h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.left-section p {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(50, 50, 50);
+}
+.search-container form {
+  background-color: #eee;
+  padding: 0.4rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  outline: 0;
+  border: 0;
+}
+
+input[type="search"] {
+  width: 75%;
+  padding-left: 1.4rem;
+}
+
+input[type="submit"] {
+  width: 25%;
+  margin-right: 0;
+  background-color: var(--primary-color);
+  padding: 0.9rem 1rem;
+  color: white;
+  border-radius: 0.2rem;
+  border: 1px solid #0953ff;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7dd8;
+  cursor: pointer;
+}
+
+/* Stats Section Style */
+
+#stat-section {
+  width: 80%;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #eee;
+  border-radius: 1rem;
+  padding: 1rem 5rem 1rem 2rem;
+  box-shadow: 10px 7px 20px rgb(94, 94, 94);
+  border: 1px solid #ddd;
+}
+
+.ti-book {
+  color: #7d83f8;
+}
+
+.ti-package {
+  color: #6ef8ff;
+}
+
+.ti-id-badge {
+  color: #ff877e;
+}
+
+.ti-user {
+  color: #ff7dd8;
+}
+
+.stat-icon {
+  font-size: 1.3rem;
+}
+
+.stat-count {
+  font-weight: 600;
+}
+
+.stat-info p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* About Section Style */
+
+#about-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.about-desc {
+  width: 60%;
+  margin: auto;
+  color: rgb(50, 50, 50);
+}
+
+.about-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.about-item {
+  padding: 2rem;
+  box-shadow: 2px 15px 10px rgb(94, 94, 94);
+  border-radius: 0.3rem;
+  border: 1.3px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-item-upper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0 0.9rem;
+}
+
+.about-item-upper h3 {
+  font-size: 1.7rem;
+}
+
+.about-item-upper p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.about-items div:nth-child(1) h3 {
+  color: #ff877e;
+}
+
+.about-items div:nth-child(2) h3 {
+  color: #6ef8ff;
+}
+
+.about-items div:nth-child(3) h3 {
+  color: #7d83f8;
+}
+
+.about-item-lower {
+  color: rgb(50, 50, 50);
+  padding-right: 0.25rem;
+}
+
+/* Courses Section Style */
+
+#courses-section {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.courses-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.courses-title h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.courses-title button {
+  padding: 1.2rem 2.4rem;
+  color: white;
+  background-color: rgb(84, 125, 247);
+  border: 1px solid #0953ff;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.courses-title button:hover {
+  background-color: #ff7dd8;
+  cursor: pointer;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.course {
+  width: calc(90% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.course-image img {
+  max-width: 100%;
+}
+.course h3 {
+  text-align: center;
+}
+.course h3 a {
+  color: black;
+  transition: 0.4s;
+}
+.course-info {
+  display: flex;
+  justify-content: space-around;
+}
+.course-price {
+  text-align: center;
+  color: #0953ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+.ti-time {
+  color: #7d83f8;
+}
+
+.course:hover .course-price {
+  color: #ff7dd8;
+}
+
+.course:hover h3 a {
+  color: #ff7dd8;
+}
+
+.course::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3px;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+.course-web::before {
+  content: "Web Development";
+}
+.course-mobile::before {
+  content: "Mobile Development";
+}
+.course-program::before {
+  content: "Programming";
+}
+
+.course:hover.course::before {
+  background-color: #ff7dd8;
+}
+
+/* Footer Section Style */
+
+footer{
+    width : 80%;
+    margin : auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding : 0.5rem;
+}
+
+.left{
+    padding: 0.5rem;
+    display : flex;
+    flex-direction: column;
+    gap : 0.7rem
+}
+
+.social{
+    display : flex;
+    align-items:center;
+    width : 60%;
+    justify-content: space-around;
+}
+
+.social a span{
+    border-radius: 50%;
+    padding : 0.5rem;
+    transition: 0.3s;
+}
+
+.social a span:hover{
+    color : white;
+    background-color:#ff7dd8;
+}
+
+.left img{
+    max-width: 50%;
+}
+
+.middle ul li{
+    padding: 0.5rem; 
+}
+.middle ul li a{
+    transition: 0.3s;
+}
+
+.middle ul li a:hover{
+    color : #0953ff;
+}
+
+.right ul li{
+    padding: 0.5rem
+}
+
+.right h3,.middle h3{
+    margin-bottom:0.7rem;
+}
+
+
+.ti-map,
+.ti-email,
+.ti-mobile{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding-right: 0.9rem;
+}
